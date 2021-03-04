@@ -1,0 +1,22 @@
+{
+  "name": "care-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "rebuild": "DB_RBD=true nodemon",
+    "start": "DB_RBD=false nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.5.0",
+    "sequelize": "^6.5.0"
+  }
+}
