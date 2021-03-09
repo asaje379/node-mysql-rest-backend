@@ -20,7 +20,7 @@ app.listen(PORT, () => {
     console.log(`Server is running...`);
     if (rebuild === 'true') {
         squelize.sync({ force: 'true' }).then(() => {
-            console.log('Réinitialisation de la base de donnée ...');
+            console.log('Réinitialisation de la base de données ...');
         });
     } else squelize.sync();
 
