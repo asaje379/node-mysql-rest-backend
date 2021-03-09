@@ -1,5 +1,5 @@
 {
-  "name": "care-app-server",
+  "name": "eapi-mysql-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
