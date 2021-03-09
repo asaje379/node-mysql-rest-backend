@@ -6,7 +6,6 @@ const rebuild = process.env.DB_RBD;
 
 // Configuration du port et de l'adresse hote
 const PORT = process.env.PORT || 5000;
-const HOST = 'localhost';
 
 const app = express();
 
@@ -17,8 +16,8 @@ app.use('/uploads', express.static('uploads'));
 
 createRoutes(app);
 
-app.listen(PORT, HOST, () => {
-    console.log(`Server is running on ${HOST}:${PORT}`);
+app.listen(PORT, () => {
+    console.log(`Server is running...`);
     if (rebuild === 'true') {
         squelize.sync({ force: 'true' }).then(() => {
             console.log('Réinitialisation de la base de donnée ...');
